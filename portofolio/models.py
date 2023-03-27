@@ -4,7 +4,8 @@ from django.db import models
 
 
 class Foto(models.Model):
-    # foto = models.ImageField(upload_to='cover/', null=True)
+    foto = models.ImageField(upload_to='foto/', null=True)
+    tanggal = models.DateTimeField(auto_now_add=True, null=True) 
     judul = models.CharField(max_length=50)
     keterangan = models.TextField()
 
